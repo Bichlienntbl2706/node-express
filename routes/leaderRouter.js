@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const leaderRouter = express.Router();
 
 leaderRouter.use(bodyParser.json());
-
+//
 leaderRouter.route('/')
 
 .all( (req, res, next) => {
@@ -29,7 +29,7 @@ leaderRouter.route('/')
 .delete((req, res, next) => {
     res.end('Deleting all leaders');
 });
-
+//leaderId
 leaderRouter.route('/:leaderId')
 
 .all( (req, res, next) => {
